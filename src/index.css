@@ -1,0 +1,54 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  background: url('./assets/glass.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 100px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App h1{
+  padding: 0;
+  margin: 0;
+  font-family: 'Prata', serif;
+  font-size: 3.5rem;
+  color:deeppink;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+.App .text-container {
+  width: min(60%, 1000px);
+  font-size: 1.7rem;
+  height: 50vh;
+  overflow: scroll;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 2rem;
+  background-color: rgba(255, 255,255 , 0.4);
+  border-radius: 2rem;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+@media screen and (max-width:600px) {
+  .App .text-container{
+    font-size: 1.3rem;
+  }
+}
+
+
+/* font-family: 'Noto Sans', sans-serif;
+font-family: 'Prata', serif; */
