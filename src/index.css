@@ -1,10 +1,10 @@
-body{
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.App{
-  background: url('./assets/glass.jpg');
+.App {
+  background: url("./assets/glass.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,16 +16,94 @@ body{
   justify-content: center;
   align-items: center;
 }
-.App h1{
+.App h1 {
   padding: 0;
   margin: 0;
-  font-family: 'Prata', serif;
-  font-size: 3.5rem;
-  color:deeppink;
+  font-family: "Prata", serif;
+  font-size: 2.5rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   cursor: pointer;
+}
+.App .text-msg {
+  width: min(60%, 1000px);
+  font-size: 1.7rem;
+  height: 20vh;
+  overflow: scroll;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  box-shadow: 5px 6px 15px violet;
+  font-family: 'Noto Sans', sans-serif;
+  color: deeppink;
+}
+.header {
+  width: min(60%, 1000px);
+  overflow: scroll;
+  padding-left: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  margin-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  color: deeppink;
+  box-shadow: 5px 6px 15px violet;
+}
+.clear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+.git{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: deeppink;
+}
+.dropdown {
+  /* position: relative; */
+  display: flex;
+  font-size: 1.7rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.earth {
+  display: flex;
+  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+  transition: all 200ms ease;
+}
+.rotate {
+  transform: rotate(360deg);
+}
+.menu {
+  position: absolute;
+  display: none;
+  top: 14%;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem;
+  border-radius: 10px;
+  z-index: 100;
+  transition: display 300ms ease;
+}
+.menu p {
+  padding: 0.5rem;
+}
+.menu p:hover {
+  background-color: white;
 }
 .App .text-container {
   width: min(60%, 1000px);
@@ -34,21 +112,55 @@ body{
   overflow: scroll;
   padding-left: 2rem;
   padding-right: 2rem;
-  margin-top: 2rem;
-  background-color: rgba(255, 255,255 , 0.4);
+  margin-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  box-shadow: 5px 6px 15px violet;
+  font-family: 'Noto Sans', sans-serif;
+  color: deeppink;
+}
+.choices {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  width: 100%;
+  overflow-x: scroll;
+  cursor: move;
+}
+.choices p {
+  flex: 1 0 auto;
+  background-color: violet;
+  color: white;
+  margin: 10px;
+  margin-bottom: 0px;
+  padding: 0.4rem 1rem;
   border-radius: 2rem;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
 
-@media screen and (max-width:600px) {
-  .App .text-container{
+@media screen and (max-width: 600px) {
+  .App .text-container {
     font-size: 1.3rem;
   }
 }
-
+@media screen and (max-width: 500px) {
+  .App h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width:430px) {
+  .dropdown{
+    font-size: 1.2rem;
+  }
+  .App h1{
+    font-size: 1.6rem;
+  }
+}
 
 /* font-family: 'Noto Sans', sans-serif;
 font-family: 'Prata', serif; */
